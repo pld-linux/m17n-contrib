@@ -1,12 +1,12 @@
 Summary:	Contributed database for the multilingual text processing library
-#Summary(pl.UTF-8):	-
+Summary(pl.UTF-8):	Społecznościowa baza danych do biblioteki przetwarzania tekstu wielojęzycznego
 Name:		m17n-contrib
-Version:	1.1.12
+Version:	1.1.13
 Release:	1
-License:	LGPL
-Group:		Applications
+License:	LGPL v2.1+
+Group:		Applications/Text
 Source0:	http://www.m17n.org/m17n-lib-download/%{name}-%{version}.tar.gz
-# Source0-md5:	fb7c35194e8940cf3ca381f5b111434c
+# Source0-md5:	b4cae1ca81ec83d3d9c3f9dc45b0c12f
 URL:		http://www.m17n.org/
 BuildRequires:	m17n-db
 Requires:	m17n-db
@@ -16,7 +16,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package contains the database files contributed by the community
 and used by m17n-lib.
 
-#%description -l pl.UTF-8
+%description -l pl.UTF-8
+Ten pakiet zawiera pliki baz danych udostępnione przez społeczność do
+wykorzystania przez m17n-lib.
 
 %prep
 %setup -q
@@ -39,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -f m17n-contrib.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
-%{_datadir}/m17n/icons/*
+%{_datadir}/m17n/icons/*.png
 %{_datadir}/m17n/*.mim
 %{_datadir}/m17n/scripts
