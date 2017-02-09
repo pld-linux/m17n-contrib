@@ -1,12 +1,12 @@
 Summary:	Contributed database for the multilingual text processing library
 Summary(pl.UTF-8):	Społecznościowa baza danych do biblioteki przetwarzania tekstu wielojęzycznego
 Name:		m17n-contrib
-Version:	1.1.13
+Version:	1.1.14
 Release:	1
 License:	LGPL v2.1+
 Group:		Applications/Text
-Source0:	http://www.m17n.org/m17n-lib-download/%{name}-%{version}.tar.gz
-# Source0-md5:	b4cae1ca81ec83d3d9c3f9dc45b0c12f
+Source0:	http://download.savannah.gnu.org/releases/m17n/%{name}-%{version}.tar.gz
+# Source0-md5:	ae8c8b57604144a3d40afe54d5a912a3
 URL:		http://www.m17n.org/
 BuildRequires:	m17n-db
 Requires:	m17n-db
